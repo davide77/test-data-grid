@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'roundcorners'.
-        on line 9 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss, in `roundcorners'
-        from line 9 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss
+        on line 8 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss, in `roundcorners'
+        from line 8 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss
 
 Backtrace:
-/Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss:9:in `roundcorners'
-/Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss:9
+/Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss:8:in `roundcorners'
+/Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss:8
 /Library/Ruby/Gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `send'
 /Library/Ruby/Gems/1.8/gems/sass-3.2.9/lib/sass/../sass/tree/visitors/base.rb:37:in `visit'
@@ -79,4 +79,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'roundcorners'.\A         on line 9 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss, in `roundcorners'\A         from line 9 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss"; }
+  content: "Syntax error: Undefined mixin 'roundcorners'.\A         on line 8 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss, in `roundcorners'\A         from line 8 of /Users/daisydomenghini/Documents/websites/test-task/sass/modules/table.scss"; }

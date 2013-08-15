@@ -35,14 +35,14 @@
   margin:40px auto 0 auto;
   min-height: 100%;
   z-index: 1;
-  @include roundcorners(4px);
+  @include roundcorners(6px);
   background: #f1f9ff;
   width: 1045px;
   .title{
     background:#e1edf4;
     font-family: $font-face-normal;
-
-    padding:6px;
+    border-bottom:1px solid #c5c5c5;
+    padding:7px 7px 8px 7px;
     width: 100%;
     display: inline-block;
     h4{
@@ -60,10 +60,10 @@
     min-height:94.5%;
     border:1px solid #c5c5c5;
     background: #fff;
-    margin: 3px;
-    padding: 20px;
+    margin:3px auto 3px auto;
+    //padding: 20px;
     width: 99.5%;
-    display: inline-block;
+    display: block;
     position: relative;
  
   }
