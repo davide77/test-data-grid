@@ -33,7 +33,7 @@ var module = {
           $("tbody tr:nth-child(2n)").add("tbody tr:nth-child(2n-2)").addClass("highlight");
 
           var $items;
-          $items = $('#result thead td span');
+          $items = $('#result thead th span');
           $items.on('click', function (e) {
               var selected;
               e.preventDefault();
