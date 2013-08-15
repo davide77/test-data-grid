@@ -1,0 +1,210 @@
+#Grid{
+	width: 940px;
+	
+	overflow: hidden;
+	margin: auto;
+	margin-top: 20px;
+  display:block;
+  position: relative;
+  @include roundcorners(4px);
+  border:1px solid #cacac9;
+  @include box-shadow(1px, 0px, 1px, #fff inset);
+  #result{
+  	overflow: visible;
+  	height:267px;
+
+    thead{
+    	tr{
+    		width: 100%;
+    		@include gradient(#d9e7f1, #e9f1f7);
+    		border-bottom:1px solid #cacac9;
+    		td{
+    			width: 19.2%;
+    			&.Ticker{
+		      	span{
+		      		&.active{
+		      			&:after{
+		      				right:-5px;
+		      			}
+		      		}
+		      	}
+		      }
+		      &.Industry{
+		      	span{
+		      		&.active{
+		      			&:after{
+		      				right:-15px;
+		      			}
+		      		}
+		      	}
+		      }
+		      &.Market{
+		      	span{
+		      		&.active{
+		      			&:after{
+		      				right:-15px;
+		      			}
+		      		}
+		      	}
+		      }
+		      &.Price{
+		      	span{
+		      		&.active{
+		      			&:after{
+		      				right:34px;
+		      			}
+		      		}
+		      	}
+		      }
+		      &.Change{
+		      	span{
+		      		&.active{
+		      			&:after{
+		      				right:34px;
+		      			}
+		      		}
+		      	}
+		      }
+		      &.Volume{
+		      	span{
+		      		&.active{
+		      			&:after{
+		      				right:60px;
+		      			}
+		      		}
+		      	}
+		      }
+
+		      &:nth-child(5n){
+		      	span{
+		      		padding-right: 50px;
+		      	}
+	    		}
+	    		&:nth-child(6n){
+
+	    		}
+
+
+    			span{
+    				@include text-shadow(rgba(white, 0.2) 1px 1px 0);
+	          position:relative;
+	          text-decoration:none;
+	          font-size:12px;
+	          font-weight: bold;
+	          color:#8e989f;
+	          padding:10px 0px 10px 0px;
+	          display: inline-block;
+	          float:right;
+	          cursor: pointer;
+	          @include transition(all 0.3s ease-out);
+
+           &.active {
+           	color: rgba(221, 136, 0, 0.9);
+			      &:after {
+			      	@include text-shadow(rgba(white, 0.2) 1px 1px 0);
+			        border-color:rgba(221, 136, 0, 0.9) transparent transparent transparent ;
+			        @include transition(all 0.3s ease-out);
+			        position:absolute;
+			        content:"";
+			        border-width:6px;
+			        border-style:solid;
+			        top:15px;
+			        right:0px;
+			        }
+			      }
+			      &:hover{
+			      	color: rgba(221, 136, 0, 0.9);
+			      	@include text-shadow(rgba(white, 0.2) 1px 1px 0);
+
+			      }
+    			}
+    		&:first-child, &:nth-child(2){
+  				span{
+  					float: left;
+  					}
+  				}
+	  			&:last-child{
+	    			span{
+	    				padding-right:10px;
+	    			}
+	    		}
+	    		&:first-child{
+	    			span{
+	    				padding-right:10px;
+	    			}
+	    		}
+    		}
+
+    		&:first-child{
+    			td{
+    				span{
+    				}
+    				&:first-child{
+    					span{
+    						padding-left:10px;
+    					}
+    				}
+    				
+    			}
+    		}
+
+    	}
+    }
+    tbody{
+    	tr{
+    		@include transition(all 0.3s ease-out);
+    		td{
+    			width: 19.2%;
+    			span{
+    				@include text-shadow(rgba(white, 0.2) 1px 1px 0);
+	          position:relative;
+	          text-decoration:none;
+	          font-size:12px;
+	          color:$anchor;
+	          padding:4px 0;
+	          display: inline-block;
+	          float:right;
+    			}
+
+  			&:first-child, &:nth-child(2){
+  				span{
+  					float: left;
+  					}
+  				}
+  				&:last-child{
+	    			span{
+	    				padding-right:10px;
+	    			}
+	    		}
+    		&:first-child{
+	    			span{
+	    				padding-left:10px;
+	    			}
+	    		}
+	    		&:nth-child(5n){
+	    			padding-right: 50px;
+	    		}
+	    		&:nth-child(6n){
+	    		}
+  			}
+
+    		&.highlight {
+    			background-color: #f8f8f8;
+    		}
+    		&:hover{
+    			background-color: #e9f1f7;
+    		}
+    	}
+    }
+    .positive{
+    	span{
+    		color:#0aa000;
+    	}
+    }
+    .negative{
+    	span{
+    		color:#aa0000;
+    }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+.header{
+  padding:0px;
+  position:relative;
+  display:block;
+  margin: 0 auto;
+  width: 940px;
+  clear: both;
+  
+  .logo {
+    margin:12px 0 12px 0;
+    display: inline-block;
+    h1{
+      a{
+        background: url('../assets/images/datagrid.png') no-repeat 0 0;
+        width:164px;
+        height:27px;
+        display: inline-block;
+        text-indent:-9999em;
+      }
+    }
+  }
+
+  #nav{
+    width: 100%;
+    display:block;
+    position: relative;
+    @include gradient(#eef0f0, #f6f6f6);
+    @include roundcorners(4px);
+    border:1px solid #cacac9;
+    height:40px;
+    @include box-shadow(1px, 0px, 1px, #fff inset);
+
+    ul.menu, ul.share{
+      display: inline-block;
+      margin: 0 0 0 0px ;
+      position:relative;
+      
+      li {
+        padding:0;
+        float:left;
+        display:inline;
+
+        a {
+          height: 38px;
+          border-left: 1px solid white;
+          font-family: $font-face-normal;
+          @include text-shadow(rgba(white, 0.2) 1px 1px 0);
+          position:relative;
+          text-decoration:none;
+          font-size:12px;
+          font-weight: bold;
+          color:$anchor;
+          padding:12px 12px 8px 12px;
+          float:left;
+          display:inline;
+          &:after{
+            top:-1px;
+            content:"";
+            position: absolute;
+            height: 39px;
+            width: 1px;
+          }
+          &:after {
+            right:-0px;
+            background:#d0d0d0;
+          }
+ 
+          &:hover{
+            border-left: 1px solid #d8d8d1;
+            @include gradient(#dcdcdc, #e9e9e9);
+            color:$anchor-hover;
+          }
+          &.home{
+            border-left:none;
+            display: block;
+            text-indent:-999em;
+            position: relative;
+            width: 40px;
+            
+            &:before{
+              content:"";
+              position: absolute;
+              background: url('../assets/images/home-icon.png') no-repeat 0 0;
+              width: 16px;
+              height:17px;
+              left:12px;
+            }
+            
+          }
+         
+      }
+      a.active {
+        opacity:1;
+        &:after {
+          @include transition(all 0.3s ease-out);
+          position:absolute;
+          content:"";
+          border-width:6px;
+          border-style:solid;
+          top:37px;
+          right:50%;
+          }
+        }
+        &:first-child{
+          a:before{
+              
+            }
+          }
+          &:last-child{
+          a:after{
+              display: none;
+            }
+          }
+      }
+    }
+    ul.share{
+      float:right;
+        a{
+          &:first-child{
+            &:before{
+              top:-1px;
+              content:"";
+              position: absolute;
+              height: 39px;
+              width: 1px;
+              left:-2px;
+              background:#d0d0d0;
+            }
+          }
+        }
+   }
+  }
+  form.form-search{
+    position: absolute;
+    top:10px;
+    right:0;
+      ul{
+        padding-top: 3px;
+        float: left;
+
+        li{
+          padding:0;
+          float:left;
+          display:inline;
+          a{
+            font-family: $font-face-normal;
+            @include text-shadow(rgba(white, 0.2) 1px 1px 0);
+            position:relative;
+            text-decoration:none;
+            font-size:12px;
+            color:$anchor;
+            padding:2px 10px ;
+            float:left;
+            display:inline;
+            
+            &:hover{
+            }        
+          }
+        &:first-child{
+          position:relative;
+          &:after{
+            top:3px;
+            content:"";
+            position: absolute;
+            height:15px;
+            width: 1px;
+          }
+          &:after {
+            right:-0px;
+            background:#d0d0d0;
+          }
+        }
+      }
+    }
+    label{
+      font-family: $font-face-normal;
+      position: relative;
+      input{
+        width: 260px;
+        border: 1px solid #eeeeee;
+        @include gradient(#fefefe, #fefefe);
+        @include roundcorners(4px);
+        color: #767676;
+        padding:5px 6px 5px 26px;
+      }
+      button{
+        cursor: pointer;
+        border:0;
+        background: url('../assets/images/search.png') no-repeat 0 0;
+        width: 13px;
+        height:15px;
+        position: absolute;
+        text-indent: -999em;
+        left:6px;
+        top:4px;
+        @include transition(all 0.3s ease-out);
+        &:hover{
+          right:4px;
+        }
+      }
+    }
+}
+}
+ 

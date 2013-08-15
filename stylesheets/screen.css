@@ -1,0 +1,714 @@
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@-moz-keyframes infinite-rotate {
+  /* line 62, ../sass/mixins.scss */
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 65, ../sass/mixins.scss */
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes infinite-rotate {
+  /* line 62, ../sass/mixins.scss */
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 65, ../sass/mixins.scss */
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes infinite-rotate {
+  /* line 62, ../sass/mixins.scss */
+  from {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 65, ../sass/mixins.scss */
+  to {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes infinite-rotate {
+  /* line 62, ../sass/mixins.scss */
+  from {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 65, ../sass/mixins.scss */
+  to {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes infinite-rotate {
+  /* line 62, ../sass/mixins.scss */
+  from {
+    transform: rotate(0deg);
+  }
+
+  /* line 65, ../sass/mixins.scss */
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* apply a natural box layout model to all elements */
+/* line 4, ../sass/modules/style.scss */
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/modules/style.scss */
+html, body {
+  font-family: Tahoma, Geneva, sans-serif;
+  background-color: white;
+}
+
+/* line 13, ../sass/modules/style.scss */
+html, body {
+  overflow-x: hidden;
+}
+
+/* line 16, ../sass/modules/style.scss */
+html {
+  height: 100%;
+}
+
+/* line 19, ../sass/modules/style.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+/* line 24, ../sass/modules/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 28, ../sass/modules/style.scss */
+.clearfix {
+  *zoom: 1;
+}
+
+/* line 32, ../sass/modules/style.scss */
+body {
+  background: white;
+  font: normal 14px/1.3 Tahoma, Geneva, sans-serif;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  padding: 0;
+}
+
+/* line 40, ../sass/modules/style.scss */
+p {
+  margin-bottom: 15px;
+  font-size: 11px;
+  font-family: Tahoma, Geneva, sans-serif;
+  line-height: 1.3;
+}
+
+/* line 47, ../sass/modules/style.scss */
+h1 {
+  font-size: 27px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #ed008c;
+  letter-spacing: 3px;
+  padding: 0px;
+  text-shadow: #dedede 0 1px 0;
+}
+
+/* line 56, ../sass/modules/style.scss */
+a {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  color: #2c2925;
+  text-decoration: none;
+}
+/* line 60, ../sass/modules/style.scss */
+a:hover {
+  color: #ed008c;
+}
+
+/* line 1, ../sass/modules/main.scss */
+body {
+  background: #282828 url("../assets/images/bg-grey.png") repeat 0 0;
+  height: 100%;
+}
+
+/* line 5, ../sass/modules/main.scss */
+.background {
+  z-index: 0;
+  position: relative;
+}
+/* line 9, ../sass/modules/main.scss */
+.background:before, .background:after {
+  content: "";
+  position: fixed;
+}
+/* line 13, ../sass/modules/main.scss */
+.background:after {
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, rgba(255, 128, 0, 0.2)), color-stop(100%, rgba(255, 128, 0, 0)));
+  background-image: -webkit-radial-gradient(center, ellipse cover, rgba(255, 128, 0, 0.2) 0%, rgba(255, 128, 0, 0) 100%);
+  background-image: -moz-radial-gradient(center, ellipse cover, rgba(255, 128, 0, 0.2) 0%, rgba(255, 128, 0, 0) 100%);
+  background-image: -o-radial-gradient(center, ellipse cover, rgba(255, 128, 0, 0.2) 0%, rgba(255, 128, 0, 0) 100%);
+  background-image: radial-gradient(center, ellipse cover, rgba(255, 128, 0, 0.2) 0%, rgba(255, 128, 0, 0) 100%);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 20, ../sass/modules/main.scss */
+.background:before {
+  background: url("../assets/images/bg-bubble.png") no-repeat 0 0;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 32, ../sass/modules/main.scss */
+.container {
+  overflow: hidden;
+  position: relative;
+  margin: 40px auto 0 auto;
+  min-height: 100%;
+  z-index: 1;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  background: #f1f9ff;
+  width: 1045px;
+}
+/* line 41, ../sass/modules/main.scss */
+.container .title {
+  background: #e1edf4;
+  font-family: Tahoma, Geneva, sans-serif;
+  padding: 6px;
+  width: 100%;
+  display: inline-block;
+}
+/* line 48, ../sass/modules/main.scss */
+.container .title h4 {
+  font-size: 12px;
+  color: #363636;
+}
+
+/* line 57, ../sass/modules/main.scss */
+.container {
+  clear: both;
+}
+/* line 59, ../sass/modules/main.scss */
+.container .wrapper {
+  min-height: 94.5%;
+  border: 1px solid #c5c5c5;
+  background: #fff;
+  margin: 3px;
+  padding: 20px;
+  width: 99.5%;
+  display: inline-block;
+  position: relative;
+}
+
+/* line 1, ../sass/modules/navigation.scss */
+.header {
+  padding: 0px;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 940px;
+  clear: both;
+}
+/* line 9, ../sass/modules/navigation.scss */
+.header .logo {
+  margin: 12px 0 12px 0;
+  display: inline-block;
+}
+/* line 13, ../sass/modules/navigation.scss */
+.header .logo h1 a {
+  background: url("../assets/images/datagrid.png") no-repeat 0 0;
+  width: 164px;
+  height: 27px;
+  display: inline-block;
+  text-indent: -9999em;
+}
+/* line 23, ../sass/modules/navigation.scss */
+.header #nav {
+  width: 100%;
+  display: block;
+  position: relative;
+  background: #f6f6f6;
+  background: -moz-linear-gradient(top, #eef0f0 0%, #f6f6f6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eef0f0), color-stop(100%, #f6f6f6));
+  background: -webkit-linear-gradient(top, #eef0f0 0%, #f6f6f6 100%);
+  background: -o-linear-gradient(top, #eef0f0 0%, #f6f6f6 100%);
+  background: -ms-linear-gradient(top, #eef0f0 0%, #f6f6f6 100%);
+  background: linear-gradient(to bottom, #eef0f0 0%, #f6f6f6 100%);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid #cacac9;
+  height: 40px;
+  -webkit-box-shadow: 1px 0px 1px white inset;
+  -moz-box-shadow: 1px 0px 1px white inset;
+  box-shadow: 1px 0px 1px white inset;
+}
+/* line 33, ../sass/modules/navigation.scss */
+.header #nav ul.menu, .header #nav ul.share {
+  display: inline-block;
+  margin: 0 0 0 0px;
+  position: relative;
+}
+/* line 38, ../sass/modules/navigation.scss */
+.header #nav ul.menu li, .header #nav ul.share li {
+  padding: 0;
+  float: left;
+  display: inline;
+}
+/* line 43, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a, .header #nav ul.share li a {
+  height: 38px;
+  border-left: 1px solid white;
+  font-family: Tahoma, Geneva, sans-serif;
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8e989f;
+  padding: 12px 12px 8px 12px;
+  float: left;
+  display: inline;
+}
+/* line 56, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a:after, .header #nav ul.share li a:after {
+  top: -1px;
+  content: "";
+  position: absolute;
+  height: 39px;
+  width: 1px;
+}
+/* line 63, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a:after, .header #nav ul.share li a:after {
+  right: -0px;
+  background: #d0d0d0;
+}
+/* line 68, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a:hover, .header #nav ul.share li a:hover {
+  border-left: 1px solid #d8d8d1;
+  background: #e9e9e9;
+  background: -moz-linear-gradient(top, gainsboro 0%, #e9e9e9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, gainsboro), color-stop(100%, #e9e9e9));
+  background: -webkit-linear-gradient(top, gainsboro 0%, #e9e9e9 100%);
+  background: -o-linear-gradient(top, gainsboro 0%, #e9e9e9 100%);
+  background: -ms-linear-gradient(top, gainsboro 0%, #e9e9e9 100%);
+  background: linear-gradient(to bottom, #dcdcdc 0%, #e9e9e9 100%);
+  color: #767f85;
+}
+/* line 73, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a.home, .header #nav ul.share li a.home {
+  border-left: none;
+  display: block;
+  text-indent: -999em;
+  position: relative;
+  width: 40px;
+}
+/* line 80, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a.home:before, .header #nav ul.share li a.home:before {
+  content: "";
+  position: absolute;
+  background: url("../assets/images/home-icon.png") no-repeat 0 0;
+  width: 16px;
+  height: 17px;
+  left: 12px;
+}
+/* line 92, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a.active, .header #nav ul.share li a.active {
+  opacity: 1;
+}
+/* line 94, ../sass/modules/navigation.scss */
+.header #nav ul.menu li a.active:after, .header #nav ul.share li a.active:after {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  top: 37px;
+  right: 50%;
+}
+/* line 110, ../sass/modules/navigation.scss */
+.header #nav ul.menu li:last-child a:after, .header #nav ul.share li:last-child a:after {
+  display: none;
+}
+/* line 116, ../sass/modules/navigation.scss */
+.header #nav ul.share {
+  float: right;
+}
+/* line 120, ../sass/modules/navigation.scss */
+.header #nav ul.share a:first-child:before {
+  top: -1px;
+  content: "";
+  position: absolute;
+  height: 39px;
+  width: 1px;
+  left: -2px;
+  background: #d0d0d0;
+}
+/* line 133, ../sass/modules/navigation.scss */
+.header form.form-search {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+/* line 137, ../sass/modules/navigation.scss */
+.header form.form-search ul {
+  padding-top: 3px;
+  float: left;
+}
+/* line 141, ../sass/modules/navigation.scss */
+.header form.form-search ul li {
+  padding: 0;
+  float: left;
+  display: inline;
+}
+/* line 145, ../sass/modules/navigation.scss */
+.header form.form-search ul li a {
+  font-family: Tahoma, Geneva, sans-serif;
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  color: #8e989f;
+  padding: 2px 10px;
+  float: left;
+  display: inline;
+}
+/* line 159, ../sass/modules/navigation.scss */
+.header form.form-search ul li:first-child {
+  position: relative;
+}
+/* line 161, ../sass/modules/navigation.scss */
+.header form.form-search ul li:first-child:after {
+  top: 3px;
+  content: "";
+  position: absolute;
+  height: 15px;
+  width: 1px;
+}
+/* line 168, ../sass/modules/navigation.scss */
+.header form.form-search ul li:first-child:after {
+  right: -0px;
+  background: #d0d0d0;
+}
+/* line 175, ../sass/modules/navigation.scss */
+.header form.form-search label {
+  font-family: Tahoma, Geneva, sans-serif;
+  position: relative;
+}
+/* line 178, ../sass/modules/navigation.scss */
+.header form.form-search label input {
+  width: 260px;
+  border: 1px solid #eeeeee;
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #fefefe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #fefefe));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #fefefe 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #fefefe 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #fefefe 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #fefefe 100%);
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: #767676;
+  padding: 5px 6px 5px 26px;
+}
+/* line 186, ../sass/modules/navigation.scss */
+.header form.form-search label button {
+  cursor: pointer;
+  border: 0;
+  background: url("../assets/images/search.png") no-repeat 0 0;
+  width: 13px;
+  height: 15px;
+  position: absolute;
+  text-indent: -999em;
+  left: 6px;
+  top: 4px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 197, ../sass/modules/navigation.scss */
+.header form.form-search label button:hover {
+  right: 4px;
+}
+
+/* line 1, ../sass/modules/table.scss */
+#Grid {
+  width: 940px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+  display: block;
+  position: relative;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -o-border-radius: 4px;
+  border: 1px solid #cacac9;
+  -webkit-box-shadow: 1px 0px 1px white inset;
+  -moz-box-shadow: 1px 0px 1px white inset;
+  box-shadow: 1px 0px 1px white inset;
+}
+/* line 12, ../sass/modules/table.scss */
+#Grid #result {
+  overflow: visible;
+  height: 267px;
+}
+/* line 17, ../sass/modules/table.scss */
+#Grid #result thead tr {
+  width: 100%;
+  background: #e9f1f7;
+  background: -moz-linear-gradient(top, #d9e7f1 0%, #e9f1f7 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d9e7f1), color-stop(100%, #e9f1f7));
+  background: -webkit-linear-gradient(top, #d9e7f1 0%, #e9f1f7 100%);
+  background: -o-linear-gradient(top, #d9e7f1 0%, #e9f1f7 100%);
+  background: -ms-linear-gradient(top, #d9e7f1 0%, #e9f1f7 100%);
+  background: linear-gradient(to bottom, #d9e7f1 0%, #e9f1f7 100%);
+  border-bottom: 1px solid #cacac9;
+}
+/* line 21, ../sass/modules/table.scss */
+#Grid #result thead tr td {
+  width: 19.2%;
+}
+/* line 26, ../sass/modules/table.scss */
+#Grid #result thead tr td.Ticker span.active:after {
+  right: -5px;
+}
+/* line 35, ../sass/modules/table.scss */
+#Grid #result thead tr td.Industry span.active:after {
+  right: -15px;
+}
+/* line 44, ../sass/modules/table.scss */
+#Grid #result thead tr td.Market span.active:after {
+  right: -15px;
+}
+/* line 53, ../sass/modules/table.scss */
+#Grid #result thead tr td.Price span.active:after {
+  right: 34px;
+}
+/* line 62, ../sass/modules/table.scss */
+#Grid #result thead tr td.Change span.active:after {
+  right: 34px;
+}
+/* line 71, ../sass/modules/table.scss */
+#Grid #result thead tr td.Volume span.active:after {
+  right: 60px;
+}
+/* line 79, ../sass/modules/table.scss */
+#Grid #result thead tr td:nth-child(5n) span {
+  padding-right: 50px;
+}
+/* line 88, ../sass/modules/table.scss */
+#Grid #result thead tr td span {
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8e989f;
+  padding: 10px 0px 10px 0px;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 101, ../sass/modules/table.scss */
+#Grid #result thead tr td span.active {
+  color: rgba(221, 136, 0, 0.9);
+}
+/* line 103, ../sass/modules/table.scss */
+#Grid #result thead tr td span.active:after {
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0;
+  border-color: rgba(221, 136, 0, 0.9) transparent transparent transparent;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  content: "";
+  border-width: 6px;
+  border-style: solid;
+  top: 15px;
+  right: 0px;
+}
+/* line 115, ../sass/modules/table.scss */
+#Grid #result thead tr td span:hover {
+  color: rgba(221, 136, 0, 0.9);
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0;
+}
+/* line 122, ../sass/modules/table.scss */
+#Grid #result thead tr td:first-child span, #Grid #result thead tr td:nth-child(2) span {
+  float: left;
+}
+/* line 127, ../sass/modules/table.scss */
+#Grid #result thead tr td:last-child span {
+  padding-right: 10px;
+}
+/* line 132, ../sass/modules/table.scss */
+#Grid #result thead tr td:first-child span {
+  padding-right: 10px;
+}
+/* line 143, ../sass/modules/table.scss */
+#Grid #result thead tr:first-child td:first-child span {
+  padding-left: 10px;
+}
+/* line 154, ../sass/modules/table.scss */
+#Grid #result tbody tr {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+/* line 156, ../sass/modules/table.scss */
+#Grid #result tbody tr td {
+  width: 19.2%;
+}
+/* line 158, ../sass/modules/table.scss */
+#Grid #result tbody tr td span {
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 0;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  color: #8e989f;
+  padding: 4px 0;
+  display: inline-block;
+  float: right;
+}
+/* line 170, ../sass/modules/table.scss */
+#Grid #result tbody tr td:first-child span, #Grid #result tbody tr td:nth-child(2) span {
+  float: left;
+}
+/* line 175, ../sass/modules/table.scss */
+#Grid #result tbody tr td:last-child span {
+  padding-right: 10px;
+}
+/* line 180, ../sass/modules/table.scss */
+#Grid #result tbody tr td:first-child span {
+  padding-left: 10px;
+}
+/* line 184, ../sass/modules/table.scss */
+#Grid #result tbody tr td:nth-child(5n) {
+  padding-right: 50px;
+}
+/* line 191, ../sass/modules/table.scss */
+#Grid #result tbody tr.highlight {
+  background-color: #f8f8f8;
+}
+/* line 194, ../sass/modules/table.scss */
+#Grid #result tbody tr:hover {
+  background-color: #e9f1f7;
+}
+/* line 200, ../sass/modules/table.scss */
+#Grid #result .positive span {
+  color: #0aa000;
+}
+/* line 205, ../sass/modules/table.scss */
+#Grid #result .negative span {
+  color: #aa0000;
+}

@@ -1,0 +1,68 @@
+@mixin unselectable() {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -o-user-select: none;
+   user-select: none;
+}
+@mixin roundcorners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -o-border-radius: $radius;
+}
+@mixin gradient($from, $to) {
+    background: $to;
+    background: -moz-linear-gradient(top, $from 0%, $to 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$from), color-stop(100%,$to));
+    background: -webkit-linear-gradient(top, $from 0%,$to 100%);
+    background: -o-linear-gradient(top, $from 0%,$to 100%);
+    background: -ms-linear-gradient(top, $from 0%,$to 100%);
+    background: linear-gradient(to bottom, $from 0%,$to 100%);
+}
+@mixin sprite-background($x, $y) {
+  background-image: url('../assets/images/sprite.png');
+  background-position: $x $y;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow:$top $left $blur $color;
+  -moz-box-shadow:$top $left $blur $color;
+  box-shadow:$top $left $blur $color;
+}
+@mixin cureved-shadow {
+   &:before, &:after {
+    content:"";
+      position:absolute;
+      z-index:-1;
+      -webkit-box-shadow:0 0 20px rgba(0,0,0,0.3);
+      -moz-box-shadow:0 0 20px rgba(0,0,0,0.3);
+      box-shadow:0 0 20px rgba(0,0,0,0.3);
+      top:50%;
+      bottom:0;
+      left:10px;
+      right:10px;
+      -moz-border-radius:100px / 10px;
+      border-radius:100px / 10px;
+  }
+  &:after {
+    right:10px;
+      left:auto;
+      -webkit-transform:skew(8deg) rotate(3deg);
+         -moz-transform:skew(8deg) rotate(3deg);
+          -ms-transform:skew(8deg) rotate(3deg);
+           -o-transform:skew(8deg) rotate(3deg);
+              transform:skew(8deg) rotate(3deg);
+  }
+}
+
+@include keyframes(infinite-rotate) {
+from {
+    @include rotate(0deg);
+  }
+  to {
+    @include rotate(360deg);
+  }
+}
